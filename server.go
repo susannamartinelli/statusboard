@@ -165,6 +165,7 @@ func doRequest(check *Check, broker *Broker) {
 	resp, err := client.Do(request)
 	if err != nil {
 		check.Error = err.Error()
+		log.Printf("%s %s - %dms - %d %s", check.Method, check.URL, check.ResponseTime, check.StatusCode, check.Error)
 		broker.checkResult <- check
 
 		if err, ok := err.(net.Error); ok && err.Timeout() {
