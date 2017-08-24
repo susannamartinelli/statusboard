@@ -1,6 +1,6 @@
 FROM scratch
 ADD bin/server /
-COPY assets /
-COPY static /
+COPY ./assets /assets
+COPY ./static /static
 CMD ["/server"]
-EXPOSE 80
+EXPOSE 8080
