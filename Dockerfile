@@ -1,4 +1,4 @@
-FROM golang:latest
+FROM golang:1.8.3-alpine3.6
 RUN mkdir /statusboard
 ADD . /statusboard
 WORKDIR /statusboard
