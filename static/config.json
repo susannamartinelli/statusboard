@@ -1,19 +1,28 @@
 {
   "slack": {
-    "url": "",
+    "url": "https://hooks.slack.com/services/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",
     "username": "statusboard",
     "icon_emoji": ":exclamation:",
-    "channel": ""
+    "channel": "services-uptime"
   },
   "checks": [
     {
       "id": "0",
-      "url": "http://www.repubblica.it/",
-      "name": "Repubblica",
-      "description": "description",
+      "url": "http://trigger-engine.geouniq.local/status",
+      "name": "Tengine",
+      "description": "Trigger Engine Status",
       "method": "GET",
       "interval": 60,
-      "timeout": 1000
+      "timeout": 300
+    },
+    {
+      "id": "1",
+      "url": "http://hook-engine.geouniq.local/status",
+      "name": "Hengine",
+      "description": "Hook Engine Status",
+      "method": "GET",
+      "interval": 60,
+      "timeout": 300
     }
   ]
 }

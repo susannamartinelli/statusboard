@@ -272,6 +272,6 @@ func main() {
 	// serve static folder
 	http.Handle("/", http.FileServer(http.Dir("static")))
 
-	log.Println("Running checks...serving on port 8080.")
-	http.ListenAndServe(":8080", nil)
+	log.Println("Running checks...serving on port 80.")
+	http.ListenAndServe(":80", nil)
 }
