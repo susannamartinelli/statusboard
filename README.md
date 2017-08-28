@@ -7,9 +7,7 @@ See [HERE](https://github.com/transcranial/statusboard) for configurations
 
 
 ## Running in Docker
-1. compile server.go 
-`./build.sh`
-2. build docker image 
+1. build docker image 
 `docker build -t geouniq/statusboard:0.1 .`
 3. run docker image 
 `docker run -d -p 80:80 geouniq/statusboard:0.1`
