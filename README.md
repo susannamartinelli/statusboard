@@ -1,5 +1,5 @@
 # StatusBoard
-See [HERE](github.com/transcranial/statusboard) for configurations
+See [HERE](https://github.com/transcranial/statusboard) for configurations
 
 
 ## Running local
