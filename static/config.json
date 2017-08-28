@@ -23,6 +23,6 @@
       "method": "GET",
       "interval": 60,
       "timeout": 300
-    },
+    }
   ]
 }
